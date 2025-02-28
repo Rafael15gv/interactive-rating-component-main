@@ -1,0 +1,85 @@
+:root {
+  /* ## Colors */
+  /* ### Primary */
+
+  --Orange-color: hsl(25, 97%, 53%);
+
+  /* ### Neutral */
+
+  --White-color: hsl(0, 0%, 100%);
+  --Light-Grey-color: hsl(217, 12%, 63%);
+  --Dark-Blue-color: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+  --size: 350px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* #select {
+  display: none;
+} */
+
+#mensaje {
+  display: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--Very-Dark-Blue);
+  color: var(--White-color);
+}
+
+/* ==========contenido========= */
+
+.container {
+  width: var(--size);
+  height: var(--size);
+  background-color: var(--Dark-Blue-color);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+#select {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100%;
+}
+
+.box_numeros {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.numeros {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 28%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  width: 100%;
+  height: 35px;
+  border: 0px;
+  border-radius: 20px;
+  background-color: var(--Orange-color);
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
