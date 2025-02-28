@@ -1,40 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Rating state start -->
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <main class="container">
+      <section>
+        <!-- Rating state start -->
+        <img src="images/icon-star.svg" alt="" />
+        <h1>How did we do?</h1>
 
-  How did we do?
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div>
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+        </div>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+        <button type="submit">Submit</button>
+      </section>
+      <!-- Rating state end -->
 
-  1 2 3 4 5
+      <section id="mensaje">
+        <!-- Thank you state start -->
+        <img src="/images/illustration-thank-you.svg" alt="" />
+        <div>
+          <p>
+            You selected
+            <!-- Add rating here -->
+            out of 5
+          </p>
+        </div>
 
-  Submit
+        <h1>Thank you!</h1>
 
-  <!-- Rating state end -->
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
 
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-
-</body>
+        <!-- Thank you state end -->
+      </section>
+    </main>
+  </body>
 </html>
