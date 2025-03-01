@@ -11,20 +11,13 @@
   --Dark-Blue-color: hsl(213, 19%, 18%);
   --Very-Dark-Blue: hsl(216, 12%, 8%);
   --size: 350px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-}
-
-/* #select {
-  display: none;
-} */
-
-#mensaje {
-  display: none;
 }
 
 body {
@@ -34,6 +27,10 @@ body {
   height: 100vh;
   background-color: var(--Very-Dark-Blue);
   color: var(--White-color);
+}
+
+p {
+  opacity: 70%;
 }
 
 /* ==========contenido========= */
@@ -50,7 +47,7 @@ body {
 }
 
 #select {
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
@@ -82,4 +79,55 @@ button {
   font-weight: bolder;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+button:hover {
+  background-color: var(--White-color);
+}
+
+.numeros:hover {
+  cursor: pointer;
+}
+
+.marcado {
+  background-color: var(--White-color);
+  color: var(--Very-Dark-Blue);
+}
+
+/* ==================== MENSAJE ====================== */
+
+#mensaje {
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+#mensaje div {
+  width: 70%;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: hsl(213, 19%, 28%);
+  color: var(--Orange-color);
+  font-weight: 700;
+}
+
+#mensaje p {
+  text-align: center;
+}
+#mensaje .cantidad_numero:hover,
+#mensaje div:hover {
+  cursor: pointer;
+}
+
+.ocultar {
+  display: none;
+}
+
+.mostrar {
+  display: flex;
 }
